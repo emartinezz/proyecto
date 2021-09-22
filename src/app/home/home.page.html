@@ -1,20 +1,21 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content class="ion-padding">
+  <br>
+  <div class="imagen">
+    <img  id="logo" src="https://viveduoc.cl/wp-content/uploads/2020/09/Recurso-11.png" alt="">
   </div>
+
+ <div class="formulario" >
+    <ion-item>
+      <ion-label position="floating" class="primary-input">Usuario</ion-label>
+      <ion-input #usuario></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" type="password" class="primary-input">Contraseña</ion-label>
+      <ion-input #clave></ion-input>
+    </ion-item>
+    <ion-button expand="block"  (click)="login(usuario,clave)">Ingresar</ion-button>
+  </div>
+
+  <ion-button fill="outline" expand="block" (click)="contra()">Olvide mi Contraseña</ion-button>
+  
 </ion-content>
